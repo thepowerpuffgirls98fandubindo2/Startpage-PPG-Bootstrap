@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <title>BS3 startpage</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-3-powerpuff.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+	<!-- ============================ Soon Bootstrap 5 in 2022 ============================ -->
+    <!--[if IE]>
+    This content is ignored in IE10 and other browsers.
+    In older versions of IE it renders as part of the page.
+    <![endif]-->
+    <style>
+        li.header.icon {
+            background: url(http://www.pwnhost.com/images/listicon.png) no-repeat;
+            display: block;
+            padding: 10px 0 10px 45px;
+            text-decoration: none;
+            color: #4d71b2;
+            background-size: contain;
+        }
+        
+        li.header.ppg {
+            background-image: url(images/ThePPG.png);
+        }
+        
+        .grid1 {
+            overflow: auto;
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .grid1>div {
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            float: left;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="randbg">
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <div class="search-block">
+            <form id="search-form" action="https://duckduckgo.com/?q=" method="get">
+                <div class="input-group">
+                    <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off" class="form-control" placeholder="Search" />
+                    <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">-></button>
+            </span>
+                </div>
+                <!-- /input-group -->
+                <!-- <label for="search"><span id="search-icon" class="fa fa-google"></span></label> -->
+            </form>
+            <!-- <ul id="search-help" class="search-help" style="opacity: 0;height:0;"></ul> -->
+        </div>
+        <!-- <div class="grid1">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+        <div>Box4</div>
+        <div>Box5</div>
+        <div>Box6</div>
+        <div>Box7</div>
+        <div>Box8</div>
+        <div>Box9</div>
+        <div>Box10</div>
+        <div>Box11</div>
+        </div> -->
+        <div class="blocks">
+            <ul class="block">
+                <li class="header icon ppg">Site</li>
+                <li><a href="#">Powerpuff Girls Indonesia</a></li>
+                <li><a href="https://kartunppg16indonesia.blogspot.com/">Powerpuff ID Blog</a></li>
+                <li><a href="#">Powerpuff ID Forum</a></li>
+                <li><a href="#">Powerpuff ID Wiki</a></li>
+            </ul>
+            <ul class="block">
+                <li class="header">Other</li>
+                <li><a href="#">cnsatu.ID</a></li>
+                <li><a href="#">CN1 E-Commerce</a></li>
+                <li><a href="https://www.spacetoon.id">Spacetoon.ID</a></li>
+                <li><a href="#">Tayo cute Makin Cakep</a></li>
+                <li><a href="#">MNCTV.com Retro</a></li>
+                <li><a href="http://theoldnet.com/">The Old Net</a></li>
+            </ul>
+            <ul class="block">
+                <li class="header">Games</li>
+                <li><a href="https://powerpuffyourself.com/#/id">Powerpuff Yourself</a></li>
+                <li><a href="#">CN1 - PPG Games</a></li>
+                <li><a href="#">CN1 Games</a></li>
+            </ul>
+            <ul class="block">
+                <li class="header">other</li>
+                <li><a href="#">THEGroup-CNSatu.ID</a></li>
+				<li><a href="#">Makin Cakep - Downloads</a></li>
+				<li><a href="http://codepen.io">Codepen</a></li>
+                <li><a href="https://archive.org">archive.org</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="position:fixed;right: 10px;bottom: 10px;">
+        <a class="btn btn-social-icon btn-sm btn-twitter"><span class="fa fa-twitter"></span></a>
+        <a class="btn btn-social-icon btn-sm btn-facebook"><span class="fa fa-facebook"></span></a>
+        <a class="btn btn-social-icon btn-sm btn-github" href="https://github.com/thepowerpuffgirls98fandubindo2/"><span class="fa fa-github"></span></a>
+        <a class="btn btn-social-icon btn-sm btn-default" data-toggle="modal" data-target="#modalsettings"><i style="background-image: url('images/famfamicon/wrench.png'); width: 16px; background-position: center;
+        background-repeat: no-repeat;"></i></a>
+    </div>
+    <div style="position:fixed;left: 10px;bottom: 10px;">
+        <a class="btn btn-social-icon btn-sm btn-default" href="https://duckduckgo.com/"><span class="fa fa-search"></span></a>
+    </div>
+    <!-- partial -->
+    <div class="modal fade" id="modalsettings" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <div class="form-group">
+                        <label for="inputsm">input</label>
+                        <input class="form-control input-sm" id="inputsm" type="text">
+                        <label for="inputsm">input</label>
+                        <input class="form-control input-sm" id="inputsm" type="text">
+                        <label for="inputsm">input</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">Text</span>
+                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" checked>Option 1</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 2</label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" value="" disabled>Option 3</label>
+                        </div>
+                        <label for="sel1">Select list (select one):</label>
+                        <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src="old/prefixfree.min.js"></script>
+    <script src="old/prefixfree.dynamic-dom.min.js"></script>
+    <script src="old/prefixfree.jquery.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rand.bg.js"></script>
+    <script>
+        $(".randbg").RandBG({
+            ClassPrefix: "bg",
+            count: 31
+        });
+    </script>
+    <script>
+        var $buoop = {
+            required: {
+                e: 10,
+                f: 80,
+                o: 67,
+                s: 10,
+                c: 81
+            },
+            insecure: true,
+            api: 2021.05,
+            noclose: true,
+            style: "top",
+            unsupported: true,
+            no_permanent_hide: true,
+        };
+
+        function $buo_f() {
+            var e = document.createElement("script");
+            //browser-update.org
+            e.src = "old/update.min.js";
+            document.body.appendChild(e);
+        };
+        try {
+            document.addEventListener("DOMContentLoaded", $buo_f, false)
+        } catch (e) {
+            window.attachEvent("onload", $buo_f)
+        }
+		//////////////////////////////////// Soon Bootstrap 5 in 2022 ////////////////////////////////////
+    </script>
+</body>
+
+</html>
