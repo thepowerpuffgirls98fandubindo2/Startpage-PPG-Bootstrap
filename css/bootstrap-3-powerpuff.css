@@ -756,6 +756,6 @@
   box-shadow:none;
 }
 /*Fixed Focus button*/
-.btn:focus {
+.btn:focus, .checkbox input[type="checkbox"]:focus, .radio input[type="radio"]:focus, label::before {
   outline: none !important;
 }

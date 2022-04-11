@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-3-powerpuff.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css"/>
 	<!-- ============================ Soon Bootstrap 5 in 2022 ============================ -->
     <!--[if IE]>
     This content is ignored in IE10 and other browsers.
@@ -108,6 +109,7 @@
 				<li><a href="#">Makin Cakep - Downloads</a></li>
 				<li><a href="http://codepen.io">Codepen</a></li>
                 <li><a href="https://archive.org">archive.org</a></li>
+                <li><a href="http://www.ericexperiment.com/">Eric Experiment</a></li>
             </ul>
         </div>
     </div>
@@ -123,7 +125,7 @@
     </div>
     <!-- partial -->
     <div class="modal fade" id="modalsettings" role="dialog">
-        <div class="modal-dialog modal-sm">
+        <div class="modal-dialog modal-md">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -147,12 +149,27 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
-                        <label class="radio-inline"><input type="radio" name="optradio" checked>Option 1</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                        <div class="checkbox checkbox-inline">
+                        <input type="checkbox" class="styled" id="inlineCheckbox1" value="option1">
+                        <label for="inlineCheckbox1"> Inline One </label>
+                    </div>
+                    <div class="checkbox checkbox-success checkbox-inline">
+                        <input type="checkbox" class="styled" id="inlineCheckbox2" value="option1" checked>
+                        <label for="inlineCheckbox2"> Inline Two </label>
+                    </div>
+                    <div class="checkbox checkbox-inline">
+                        <input type="checkbox" class="styled" id="inlineCheckbox3" value="option1">
+                        <label for="inlineCheckbox3"> Inline Three </label>
+                    </div>
+					<br>
+					<div class="radio radio-info radio-inline">
+                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked>
+                        <label for="inlineRadio1"> Inline One </label>
+                    </div>
+                    <div class="radio radio-inline">
+                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                        <label for="inlineRadio2"> Inline Two </label>
+                    </div>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
                 <span class="caret"></span></button>
@@ -162,15 +179,24 @@
                                 <li><a href="#">JavaScript</a></li>
                             </ul>
                         </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 1</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 2</label>
-                        </div>
-                        <div class="checkbox disabled">
-                            <label><input type="checkbox" value="" disabled>Option 3</label>
-                        </div>
+                         <div class="checkbox">
+                        <input id="checkbox1" class="styled" type="checkbox">
+                        <label for="checkbox1">
+                            Default
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary">
+                        <input id="checkbox2" class="styled" type="checkbox" checked>
+                        <label for="checkbox2">
+                            Primary
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-success">
+                        <input id="checkbox3" class="styled" type="checkbox">
+                        <label for="checkbox3">
+                            Success
+                        </label>
+                    </div>
                         <label for="sel1">Select list (select one):</label>
                         <select class="form-control" id="sel1">
                 <option>1</option>
