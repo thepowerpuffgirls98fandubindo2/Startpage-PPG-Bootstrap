@@ -123,6 +123,37 @@
     }
 }
 
+   li.header.icon {
+            background: url(http://www.pwnhost.com/images/listicon.png) no-repeat;
+            display: block;
+            padding: 10px 0 10px 45px;
+            text-decoration: none;
+            color: #4d71b2;
+            background-size: contain;
+        }
+        
+        li.header.ppg {
+            background-image: url(images/ThePPG.png);
+        }
+        
+        .grid1 {
+            overflow: auto;
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .grid1>div {
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            float: left;
+            color: #fff;
+            text-align: center;
+        }
+
 .randbg {
     -webkit-background-size: cover;
     -moz-background-size: cover;
