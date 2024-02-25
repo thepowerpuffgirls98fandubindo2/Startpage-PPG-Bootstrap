@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
     <title>BS3 startpage</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"><!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-3-powerpuff.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
@@ -18,7 +17,19 @@
     <![endif]-->
 	<link rel="stylesheet" href="style.css">
     <style>
-     
+      #result {
+   position: absolute;
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
     </style>
 </head>
 
@@ -28,14 +39,16 @@
         <div class="search-block">
             <form id="search-form" action="https://duckduckgo.com/?q=" method="get">
                 <div class="input-group">
-                    <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off" class="form-control" placeholder="Search" />
+                    <input type="text" name="q" id="searchbox" autofocus="autofocus" autocomplete="off" class="form-control" placeholder="Search" />
                     <span class="input-group-btn">
             <button class="btn btn-default" type="submit">-></button>
             </span>
                 </div>
+                
                 <!-- /input-group -->
                 <!-- <label for="search"><span id="search-icon" class="fa fa-google"></span></label> -->
             </form>
+            <ul class="list-group" id="result"></ul>
             <!-- <ul id="search-help" class="search-help" style="opacity: 0;height:0;"></ul> -->
         </div>
         <!-- <div class="grid1">
@@ -63,58 +76,59 @@
             <ul class="block">
                 <li class="header">Other</li>
                 <li><a href="#">cnsatu.ID</a></li>
+                <li><a href="#">newsverse.cnsatu.ID</a></li>
                 <li><a href="#">CN1 E-Commerce</a></li>
                 <li><a href="https://www.spacetoon.id">Spacetoon.ID</a></li>
-                <li><a href="#">Tayo cute Makin Cakep</a></li>
                 <li><a href="#">MNCTV.com Retro</a></li>
                 <li><a href="http://theoldnet.com/">The Old Net</a></li>
             </ul>
             <ul class="block">
                 <li class="header">Games</li>
-                <li><a href="https://powerpuffyourself.com/#/id">Powerpuff Yourself</a></li>
+                <li><a href="#">CN1 Games</a></li>
+                <li><a href="#">CN1 - PPG Games</a></li>
+                <!-- <li><a href="#">Powerpuff Yourself</a></li> -->
                 <li><a href="https://powerpuffgirls.cartoonnetworkasia.com/game/choose">PPG Games Link 1</a></li>
                 <li><a href="https://www.cartoonnetworkhq.com/show/the-powerpuff-girls/games">PPG Games Link 2</a></li>
-                <li><a href="https://www.cartoonnetworkme.com/show/the-powerpuff-girls/games">PPG Games Link 3</a></li>
-                <li><a href="#">CN1 - PPG Games</a></li>
-                <li><a href="#">CN1 Games</a></li>
             </ul>
             <ul class="block">
                 <li class="header">watch</li>
+                <li><a href="#">cn1-extra.ID</a></li>
                 <li><a href="https://vidio.com/">Vidio</a></li>
                 <li><a href="https://rctiplus.com">RCTI+</a></li>
                 <li><a href="https://visionplus.id">Vision+</a></li>
                 <li><a href="https://www.hotstar.com/id">Disney+ Hotstar</a></li>
                 <li><a href="https://www.hbogoasia.id">HBO GO</a></li>
-                <li><a href="#">Link</a></li>
             </ul>
             <ul class="block">
                 <li class="header">other</li>
                 <li><a href="http://windows93.net/">windows93.net</a></li>
-                <li><a href="https://poolsuite.net/">Poolsuite</a></li>
                 <li><a href="https://windows96.net/">Windows96</a></li>
+                <li><a href="https://poolsuite.net/">Poolsuite</a></li>
                 <li><a href="http://www.oldavista.com/">OldAVista</a></li>
-                <li><a href="#">Makin Cakep - Minecraft Skin Editor</a></li>
-                <li><a href="#">Makin Cakep - Downloads</a></li>
-                <li><a href="https://create.arduino.cc/">Arduino Project Hub</a></li>
+                <li><a href="https://emupedia.net/beta/emuos/">Emupedia</a></li>
+                <li><a href="#">MCDESK.CO.ID - (alias Tayo cute Makin Cakep)</a></li>
+                <li><a href="#">MCDESK - Minecraft Skins</a></li>
+                <li><a href="#">MCDESK - Software</a></li>
+                <li><a href="https://projecthub.arduino.cc">Arduino Project Hub</a></li>
             </ul>
             <ul class="block">
                 <li class="header">other</li>
-                <li><a href="#">THEGroup-CNSatu.ID</a></li>
-                <li><a href="#">THEGroup-CNSatu.ID - Live Streaming</a></li>
+                <li><a href="#">cn1-group.ID</a></li>
+                <li><a href="#">vyondnetwork.ID</a></li>
                 <li><a href="http://codepen.io">Codepen</a></li>
                 <li><a href="https://archive.org">archive.org</a></li>
                 <li><a href="https://www.online-convert.com/">Online Converter</a></li>
                 <li><a href="https://justoff.github.io/">Justoff Palemoon Extension</a></li>
                 <li><a href="http://www.ericexperiment.com/">Eric Experiment</a></li>
-                <li><a href="http://thegrg1999.epizy.com/?i=1">TheGRG 1999</a></li>
+                <!-- <li><a href="http://thegrg1999.epizy.com/?i=1">TheGRG 1999</a></li> -->
             </ul>
         </div>
     </div>
     <div style="position:fixed;right: 10px;bottom: 10px;">
-        <a class="btn btn-social-icon btn-sm btn-twitter"><span class="fa fa-twitter"></span></a>
-        <a class="btn btn-social-icon btn-sm btn-facebook"><span class="fa fa-facebook"></span></a>
-        <a class="btn btn-social-icon btn-sm btn-danger"><span class="fa fa-youtube"></span></a>
-        <a class="btn btn-social-icon btn-sm btn-github" href="https://github.com/thepowerpuffgirls98fandubindo2/"><span class="fa fa-github"></span></a>
+        <a class="btn btn-social-icon btn-sm btn-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-danger"><i class="fa-brands fa-youtube"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-github" href="https://github.com/thepowerpuffgirls98fandubindo2/"><i class="fa-brands fa-github"></i></a>
         <a class="btn btn-social-icon btn-sm btn-default" href="javascript:$('#modalsettings').modal();" data-toggle="modal" data-target="#modalsettings"><i style="background-image: url('images/famfamicon/wrench.png'); width: 16px; background-position: center;
         background-repeat: no-repeat;"></i></a>
     </div>

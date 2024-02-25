@@ -200,3 +200,57 @@
 .randbg.bg28{background-image:url('images/background/ppg18.jpg')}
 .randbg.bg29{background-image:url('images/background/ppg19.jpg')}
 .randbg.bg30{background-image:url('images/background/ppg20.jpg')}
+
+.btn-twitter {
+  color: #ffffff;
+  background-color: #14171a;
+  border-color: #090a0c;
+}
+.btn-twitter:focus,
+.btn-twitter.focus {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-twitter:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-twitter:active,
+.btn-twitter.active,
+.open > .dropdown-toggle.btn-twitter {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: none;
+  border-color: #000000;
+}
+.btn-twitter:active:hover,
+.btn-twitter.active:hover,
+.open > .dropdown-toggle.btn-twitter:hover,
+.btn-twitter:active:focus,
+.btn-twitter.active:focus,
+.open > .dropdown-toggle.btn-twitter:focus,
+.btn-twitter:active.focus,
+.btn-twitter.active.focus,
+.open > .dropdown-toggle.btn-twitter.focus {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-twitter.disabled:hover,
+.btn-twitter[disabled]:hover,
+fieldset[disabled] .btn-twitter:hover,
+.btn-twitter.disabled:focus,
+.btn-twitter[disabled]:focus,
+fieldset[disabled] .btn-twitter:focus,
+.btn-twitter.disabled.focus,
+.btn-twitter[disabled].focus,
+fieldset[disabled] .btn-twitter.focus {
+  background-color: #14171a;
+  border-color: #090a0c;
+}
+.btn-twitter .badge {
+  color: #14171a;
+  background-color: #ffffff;
+}
